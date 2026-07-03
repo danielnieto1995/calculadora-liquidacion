@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Liquidación</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="encabezado">
+
+        <h1>Calculadora de Liquidación</h1>
+
+        <p class="subtitulo">
+            Casa Estudio de Proyectos
+        </p>
+
+    </div>
+
+    <label>Valor COP</label>
+
+   <input
+    type="text"
+    id="valor"
+    placeholder="Ingrese el valor"
+    oninput="formatearMoneda(this)">
+
+    <label>Cantidad de pegadores</label>
+
+<div class="botonesPegadores">
+
+    <button type="button" class="pegador" onclick="seleccionarPegador(1)">1</button>
+    <button type="button" class="pegador" onclick="seleccionarPegador(2)">2</button>
+    <button type="button" class="pegador" onclick="seleccionarPegador(3)">3</button>
+    <button type="button" class="pegador" onclick="seleccionarPegador(4)">4</button>
+    <button type="button" class="pegador" onclick="seleccionarPegador(5)">5</button>
+
+</div>
+
+<input type="hidden" id="pegadores">
+
+
+    <div class="resultado">
+
+    <div class="cardResultado">
+
+        <span class="tituloResultado">
+            💰 Comisión
+        </span>
+
+        <span id="comision" class="valorResultado">
+            $0
+        </span>
+
+    </div>
+
+    <div class="cardResultado">
+
+        <span id="tituloPegador" class="tituloResultado">
+            👷 Valor por Pegador
+        </span>
+
+        <span id="valorPegador" class="valorResultado">
+            $0
+        </span>
+
+    </div>
+<div class="botonesAccion">
+
+    <button class="btnCopiar" onclick="copiarResultados()">
+    Copiar Resultados
+</button>
+
+    <button class="btnNuevo" onclick="nuevoCalculo()">
+         Nuevo cálculo
+    </button>
+
+</div>
+</div>
+
+</div>
+<div id="toast" class="toast">
+    ✅ Resultados copiados
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,530 @@
+body{
+
+    margin:0;
+    padding:40px;
+    background:#f2f4f8;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.contenedor{
+
+    max-width:500px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0px 0px 20px rgba(0,0,0,.15);
+
+}
+.encabezado{
+
+    background:linear-gradient(135deg,#0b63ce,#3b82f6);
+
+    margin:-30px -30px 22px -30px;
+
+    padding:22px;
+
+    border-radius:15px 15px 0 0;
+
+}
+
+.encabezado h1{
+
+    color:white;
+
+    margin:0;
+
+}
+
+.encabezado .subtitulo{
+
+    color:white;
+
+    opacity:.9;
+
+    margin-top:4px;
+
+    margin-bottom:0;
+
+    font-size:18px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#0b63ce;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-top:-10px;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+}
+label{
+
+    display:block;
+
+    margin-top:20px;
+
+    font-weight:bold;
+
+}
+
+input,select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:8px;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    border:1px solid #d1d5db;
+
+    box-sizing:border-box;
+
+    transition:.2s;
+
+    outline:none;
+
+}
+input:focus{
+
+    border-color:#0b63ce;
+
+    box-shadow:0 0 0 4px rgba(11,99,206,.15);
+
+}
+
+button{
+
+    width:100%;
+
+    padding:13px;
+
+    margin-top:18px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0b63ce;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+
+    box-shadow:0 6px 14px rgba(11,99,206,.20);
+
+}
+
+button:hover{
+
+    background:#0954ad;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(11,99,206,.30);
+
+}
+button:active{
+
+    transform:translateY(0);
+
+    box-shadow:0 3px 8px rgba(11,99,206,.20);
+
+}
+.resultado{
+
+    margin-top:18px;
+
+    text-align:center;
+
+}
+
+.resultado h3{
+
+    margin:0;
+
+    padding:0;
+
+    line-height:1;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#374151;
+
+}
+
+
+.resultado p{
+
+    margin:2px 0 12px 0;
+
+    padding:0;
+
+    line-height:1;
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:#0a8f2f;
+
+    letter-spacing:-1px;
+
+    text-shadow:0 2px 6px rgba(10,143,47,.15);
+
+}
+.botonesPegadores{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:4px;
+
+}
+
+
+.pegador{
+
+    flex:1;
+
+    background:#e5e7eb;
+
+    color:#333;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pegador:hover{
+
+    background:#cbd5e1;
+
+}
+
+.pegador.activo{
+
+    background:#0b63ce;
+
+    color:white;
+
+}
+/*======================
+RESULTADOS
+=======================*/
+
+.resultado{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.cardResultado{
+
+    background:#f8fafc;
+
+    border:1px solid #e5e7eb;
+
+    border-left:6px solid #0b63ce;
+
+    border-radius:14px;
+
+    padding:18px 22px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+    transition:.25s;
+
+}
+
+.cardResultado:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 14px 25px rgba(0,0,0,.10);
+
+}
+
+.tituloResultado{
+
+    display:block;
+
+    color:#555;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.valorResultado{
+
+    display:block;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#0b63ce;
+
+}
+/*=========================
+BOTÓN CALCULAR
+=========================*/
+
+.btnCalcular{
+
+    width:100%;
+
+    padding:11px;
+
+    margin-top:14px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0b63ce;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    box-shadow:0 4px 10px rgba(11,99,206,.18);
+
+}
+
+.btnCalcular:hover{
+
+    background:#0954ad;
+
+    transform:translateY(-1px);
+
+    box-shadow:0 8px 16px rgba(11,99,206,.25);
+
+}
+
+.btnCalcular:active{
+
+    transform:translateY(0);
+
+}
+/*=========================
+BOTÓN NUEVO CÁLCULO
+=========================*/
+
+.btnNuevo{
+
+    background:white;
+
+    color:#0b63ce;
+
+    border:2px solid #0b63ce;
+
+    padding:11px 0;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    box-sizing:border-box;
+
+}
+
+.btnNuevo:hover{
+
+    background:#0b63ce;
+
+    color:white;
+
+}
+/*=========================
+BOTONES DE ACCIÓN
+=========================*/
+
+.botonesAccion{
+
+    display:flex;
+
+    gap:12px;
+
+    margin: top 18px;
+
+}
+
+.botonesAccion button{
+
+    flex:1;
+
+    padding:11px 0;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.btnCopiar{
+
+    background:white;
+
+    color:#0b63ce;
+
+    border:2px solid #0b63ce;
+
+    padding:11px 0;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    box-sizing:border-box;
+
+}
+
+
+.btnCopiar:hover{
+
+    background:#0b63ce;
+
+    color:white;
+
+}
+
+.btnNuevo{
+
+    background:white;
+
+    color:#0b63ce;
+
+    border:2px solid #0b63ce;
+
+}
+
+.btnNuevo:hover{
+
+    background:#0b63ce;
+
+    color:white;
+
+}
+.toast{
+
+    position:fixed;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#0b63ce;
+
+    color:white;
+
+    padding:14px 24px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+.toast.mostrar{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
