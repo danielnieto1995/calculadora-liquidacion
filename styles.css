@@ -532,18 +532,29 @@ BOTONES DE ACCIÓN
 
     margin-top:20px;
 
-    padding:12px;
-
-    background:#f8f9fc;
-
-    border-left:4px solid #0b63ce;
-
-    border-radius:8px;
+    padding:14px;
 
     font-size:13px;
 
-    line-height:1.5;
+    font-weight:400;
 
     color:#555;
+
+    background:#f8f9fa;
+
+    border-left:4px solid #0b63ce;
+
+    border-radius:10px;
+
+    line-height:1.6;
+
+    text-align:justify;
+
+}
+.notaCalculadora strong{
+
+    color:#222;
+
+    font-weight:700;
 
 }
