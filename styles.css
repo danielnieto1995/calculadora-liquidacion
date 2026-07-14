@@ -528,3 +528,22 @@ BOTONES DE ACCIÓN
     visibility:visible;
 
 }
+.notaCalculadora{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#f8f9fc;
+
+    border-left:4px solid #0b63ce;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    color:#555;
+
+}
