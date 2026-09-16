@@ -29,9 +29,15 @@ if(total2 >= 400000){
 
 let total3 = total2 - oficina;
 
-let socio = total3 / 2;
+let socio = total3;
 
 let valorPegador = socio / pegadores;
+    
+    document.getElementById("oficina").innerHTML =
+    "$" + Math.round(oficina).toLocaleString("es-CO");
+
+document.getElementById("socios").innerHTML =
+    "$" + Math.round(socio).toLocaleString("es-CO");
 
 document.getElementById("tituloPegador").innerHTML =
 `Valor por Pegador (${pegadores} ${pegadores === 1 ? "persona" : "personas"})`;
@@ -172,7 +178,11 @@ function nuevoCalculo(){
 
     // Restablecer resultados
     document.getElementById("comision").innerHTML = "$0";
+    
+document.getElementById("oficina").innerHTML = "$0";
 
+document.getElementById("socios").innerHTML = "$0";
+    
     document.getElementById("tituloPegador").innerHTML = "👷 Valor por Pegador";
 
     document.getElementById("valorPegador").innerHTML = "$0";
