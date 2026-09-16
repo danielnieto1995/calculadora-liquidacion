@@ -194,7 +194,7 @@ document.getElementById("socios").innerHTML = "$0";
 
 function copiarResultados() {
     
-
+const pega = document.getElementById("valor").value;
     const comision = document.getElementById("comision").innerText;
     const oficina = document.getElementById("oficina").innerText;
 
@@ -204,8 +204,11 @@ const socios = document.getElementById("socios").innerText;
 
     const valorPegador = document.getElementById("valorPegador").innerText;
 
-   const texto =
-`Comisión:
+  const texto =
+`Pega:
+${pega}
+
+Comisión:
 ${comision}
 
 Oficina (20%):
