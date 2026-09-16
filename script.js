@@ -29,7 +29,7 @@ if(total2 >= 400000){
 
 let total3 = total2 - oficina;
 
-let socio = total3;
+let socio = total3 / 2;
 
 let valorPegador = socio / pegadores;
     
